@@ -10,7 +10,7 @@ export const ErrorPage = () => {
         navigate(-1)
     }
 
-    if (error.status === 404) {
+    if (error && error.status === 404) {
         return (
             <section className="error-page">
                 <div className="error-image">

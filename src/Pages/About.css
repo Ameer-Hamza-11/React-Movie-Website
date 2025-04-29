@@ -1,0 +1,73 @@
+/* Container for the About section */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    animation: fadeIn 1s ease-out;
+    margin-top: 2rem;
+}
+
+/* About content styles */
+.about-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Title styles */
+.about-title {
+    font-size: 2.5rem;
+    color: #ffb92a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Description text styles */
+.about-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+/* Footer text styles */
+.about-footer {
+    font-size: 1.1rem;
+    color: #bbb;
+    font-weight: 500;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-footer {
+        font-size: 1rem;
+    }
+}
